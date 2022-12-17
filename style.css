@@ -83,6 +83,7 @@ header{
     display:flex;
 	flex-direction: column;
 	align-items: center;
+	overflow: hidden;
 }
 
 .navbar{
@@ -187,6 +188,7 @@ section{
 	color: var(--white-color);
 	display: flex;
 	flex-direction: column;
+	height: 150vh;
 }
 
 .menu .menu_title{
@@ -215,15 +217,20 @@ section{
 	font-size: 1.5em;
 	display: flex;
 	justify-content: center;
+	margin: var(--padding);
+	border: 1px solid yellow;
 }
 
 .menu .menu_all .menu_li .menu_li_under .menu_kinds{
 	font-weight: bold;
 	font-size: 1.2em;
+	margin: var(--padding);
 }
 
 .menu .menu_all .menu_li .menu_li_under .menu_list{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	padding: var(--padding);
+	border: 1px solid greenyellow;
 }
