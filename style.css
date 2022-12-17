@@ -1,0 +1,229 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root{
+    /*color*/
+        --white-color: #fff;
+        --black-color: #140a00;
+        --blue-light-color: #0FFFFF;
+        --blue-color: #045fd4;
+        --red-color: #ff0000;
+        --grey-dark-color: #909090;
+        --grey-light-color: #e0e0e0;
+        --yellow-color: #FAFF00;
+        --brown-color: #381E1F;
+        --brown-light-color:#A6845E;
+    /*size*/
+        --padding: 12px;
+        --avatar-size: 36px;
+        --spacing:8px 14px;
+        --area-padding: 0px 5%;
+        --header-height: 80px;
+
+    /*font-size*/
+        --font-large:30px;
+        --font-medium:25px;
+        --font-small:20px;
+        --font-micro:13px;
+        --font-thick: bold;
+}
+
+/* css start */
+*{
+	box-sizing: border-box;
+}
+
+/* header */
+header{
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/nav_bg1.png);
+    background-size: cover;
+    display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.navbar{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	color: var(--white-color);
+}
+
+.nav_menu{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 45%;
+	justify-content: space-around;
+	font-size: 1em;
+}
+
+.header_sign{
+	display: flex;
+	font-weight: bold;
+	font-size: 2em;
+	color: var(--white-color);
+	height: 100%;
+	align-items: center;
+	padding-bottom: 150px;
+}
+
+.scroll{
+	color: var(--white-color);
+	font-weight: bold;
+	font-size: 1em;
+	margin-bottom: 50px;
+	animation: 1s ease-in-out 0s infinite alternate none running bounce;
+	position: absolute;
+}
+
+@keyframes bounce {
+	from{
+		bottom: 5px;
+	}
+	to{
+		bottom: 0px;
+	}
+}
+
+/* section about*/
+section{
+    height: 100vh;
+    width: 100%;
+	box-sizing: border-box;
+}
+
+.about{
+	display: flex;
+	flex-direction: row;
+	padding: 5%;
+	background-color: var(--grey-light-color);
+}
+
+.about_intro{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 5%;
+}
+
+.about_intro .about_intro_header{
+	font-weight: bold;
+	font-size: 2em;
+}
+
+.about_intro .fa-solid{
+	font-weight: bold;
+	font-size: 2em;
+	margin: 1em;
+}
+
+.about_img{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 50%;
+	justify-content: center;
+	align-items: center;
+}
+
+.about_img1, .about_img2, .about_img3, .about_img4{
+	width: 40%;
+	margin: calc(20%/4);
+	padding: 10px;
+	border: 1px solid var(--brown-color);
+	flex: 1;
+}
+
+/* section menu */
+.menu{
+	background-image: url(img/menu.png);
+	color: var(--white-color);
+	display: flex;
+	flex-direction: column;
+}
+
+.menu .menu_title{
+	display: flex;
+	justify-content: center;
+	margin: 1em;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.menu .menu_all{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	border: #045fd4 1px solid;
+}
+
+.menu .menu_all .menu_li{
+	margin: 30px;
+	width: 30%;
+	border: 1px solid magenta;
+}
+
+.menu .menu_all .menu_li .menu_li_header{
+	font-weight: bold;
+	font-size: 1.5em;
+	display: flex;
+	justify-content: center;
+}
+
+.menu .menu_all .menu_li .menu_li_under .menu_kinds{
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.menu .menu_all .menu_li .menu_li_under .menu_list{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
