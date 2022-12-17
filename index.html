@@ -206,5 +206,57 @@
             </div>
         </article>
     </section>
+
+    <section class="event">
+        <article class="event_intro">
+            <h2 class="event_intro_header">EVERY DAY EVENT</h2>
+            <i class="fa-solid fa-ellipsis"></i>
+            <div class="event_intro_contents">
+                월. 생맥주 3+1<br>
+                화. 아이스 아메리카노 or 뜨거운 아메리카노 제공<br>
+                수. 좋은데이 3+1<br>
+                목. 조각케익 제공<br>
+                금. 생맥주 3+1<br>
+                토. 피자 1판 제공<br>
+            </div>
+        </article>
+
+        <article class="event_service">
+            <h2 class="event_service_header">SPECIAL SERVICE</h2>
+            <i class="fa-solid fa-ellipsis"></i>
+            <div class="event_service_contents">
+                6인 이상<br>
+                기념일 시 샴페인 / 케익제공 <br>
+                스페샬안주 주문제공 <br>
+                법인단체, 가족행사 환영 <br>
+                *자녀분 동반시 키즈놀이터 무상제공
+            </div>
+        </article>
+    </section>
+
+    <section class="location">
+        <article class="location_intro">
+            <h2 class="location_intro_header">오시는길</h2>
+            <!-- * 카카오맵 - 지도퍼가기 -->
+            <!-- 1. 지도 노드 -->
+            <div id="daumRoughmapContainer1671278610616" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+            <!--
+                2. 설치 스크립트
+                * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+            -->
+            <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+            <!-- 3. 실행 스크립트 -->
+            <script charset="UTF-8">
+                new daum.roughmap.Lander({
+                    "timestamp" : "1671278610616",
+                    "key" : "2d3di",
+                    "mapWidth" : "640",
+                    "mapHeight" : "360"
+                }).render();
+            </script>
+        </article>
+    </section>
 </body>
 </html>
