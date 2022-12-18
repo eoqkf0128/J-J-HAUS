@@ -174,10 +174,13 @@ section{
 .about_img{
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
 	width: 50%;
 	justify-content: center;
 	align-items: center;
+}
+
+.about .about_img .img_folder{
+	vertical-align: center;
 }
 
 .about_img1, .about_img2, .about_img3, .about_img4{
@@ -185,7 +188,6 @@ section{
 	margin: calc(20%/4);
 	padding: 10px;
 	border: 1px solid var(--brown-color);
-	flex: 1;
 }
 
 /* section menu */
@@ -194,15 +196,30 @@ section{
 	color: var(--white-color);
 	display: flex;
 	flex-direction: column;
-	height: 100vh;
+	height: 110vh;
 }
 
 .menu .menu_title{
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	margin: 1em;
 	font-size: 2em;
 	font-weight: bold;
+	align-items: center;
+}
+
+.menu .menu_title .menu_title_name{
+	display: flex;
+	justify-content: center;
+	width: 20%;
+	text-align: center;
+	letter-spacing: 1.5em;
+	padding-left: 1.5em;
+}
+
+.menu .menu_title .menu_title_img{
+	width: 30%;
 }
 
 .menu .menu_all{
@@ -211,9 +228,16 @@ section{
 	justify-content: center;
 }
 
+.menu .menu_all .PizzaAndDrink{
+	margin: 0 30px;
+	width: 30%;
+	border: 1px solid greenyellow;
+}
+
 .menu .menu_all .menu_li{
 	margin: 0 30px;
 	width: 30%;
+	border: 1px solid wheat;
 }
 
 .menu .menu_all .menu_li .menu_li_header{
