@@ -76,6 +76,10 @@ table {
 	box-sizing: border-box;
 }
 
+body{
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
 /* header */
 header{
     height: 100vh;
