@@ -77,6 +77,10 @@ table {
 	box-sizing: border-box;
 }
 
+html{
+	scroll-behavior: smooth;
+}
+
 body{
 	font-family: 'Noto Sans KR', sans-serif;
 }
@@ -99,6 +103,11 @@ header{
 	justify-content: space-between;
 	width: 100%;
 	color: var(--white-color);
+}
+
+.navbar a{
+	color: var(--white-color);
+	text-decoration: none;
 }
 
 .nav_menu{
