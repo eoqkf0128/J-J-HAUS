@@ -234,8 +234,7 @@ section{
 	color: var(--white-color);
 	display: flex;
 	flex-direction: column;
-	height: 115vh;
-	width: 90%;
+	height: 110vh;
 }
 
 .menu .menu_title{
