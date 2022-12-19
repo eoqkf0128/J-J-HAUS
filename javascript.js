@@ -11,3 +11,10 @@ observer.observe(section[0])
 observer.observe(section[1])
 observer.observe(section[2])
 observer.observe(section[3])
+
+const togglebtn = document.querySelector('.hamburger');
+const menu = document.querySelector('.navbar');
+
+togglebtn.addEventListener('click',()=>{
+    menu.classList.toggle('active');
+});

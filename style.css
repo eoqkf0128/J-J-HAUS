@@ -125,6 +125,15 @@ header{
 	font-size: 1em;
 }
 
+.hamburger{
+	display: none;
+	margin-right: 5px;
+	position: fixed;
+	right: 15px;
+	top: 15px;
+	color: var(--orange-color);
+}
+
 .header_title{
 	display: flex;
 	flex-direction: column;
@@ -224,6 +233,7 @@ section{
 	display: flex;
 	flex-direction: column;
 	height: 115vh;
+	width: 90%;
 }
 
 .menu .menu_title{
@@ -389,4 +399,35 @@ section{
 	padding-right: 10px;
 	padding-left: 3px;
 	border-left: 5px solid var(--grey-dark-color);
+}
+
+@media screen and (max-width:760px) {
+	.navbar{
+		display: none;
+		justify-content: space-between;
+		align-items: center;
+		padding: 15px 5px 10px 5px;
+		background-color: var(--black-color);
+		position: fixed;
+	}
+
+	.navbar .nav_icon{
+		display: none;
+	}
+
+	.navbar .nav_menu{
+		width: 90%;
+	}
+
+	.navbar .nav_menu li{
+		width: 100%;
+	}
+
+	.hamburger{
+		display: flex;
+	}
+
+	.navbar.active{
+        display: flex;
+    }
 }
